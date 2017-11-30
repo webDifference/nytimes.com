@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The New York Times > Recommendations for You</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<meta name="robots" content="noarchive">
+			<meta name="SCG" content="">
+			<meta name="PT" content="">
+			<meta name="PST" content="">
+			<meta name="PSST" content="">
+			<meta name="PS" content="">
+			<meta name="ttl" content="">                                			
+			<meta property="og:url" content="https://www.nytimes.com/recommendations"/>
+			<meta property="og:type" content="article"/>
+			<meta property="og:title" content="The New York Times > Recommendations for You"/>
+			<meta property="og:image" content="https://static01.nyt.com/images/common/icons/t_wb_75.gif"/>
+			<meta property="og:description" content="Get personalized recommendations, based on what you enjoy reading on nytimes.com"/>
+			<link rel="stylesheet" type="text/css" href="https://static01.nyt.com/css/0.1/screen/build/recommendations/styles.css" />
+			<!--[if IE]>
+			<style type="text/css">
+				@import url(https://static01.nyt.com/css/0.1/screen/common/ie.css);
+			</style>
+			<![endif]-->
+			<!--[if IE 6]>
+			<style type="text/css">
+				@import url(https://static01.nyt.com/css/0.1/screen/common/ie6.css);
+			</style>
+			<![endif]-->
+			<script type="text/javascript" src="https://static01.nyt.com/js/common.js"></script>
+
+			<script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+
+			<script>
+				var googletag = googletag || {};
+				googletag.cmd = googletag.cmd || [];
+
+				googletag.cmd.push(function() {
+					googletag.defineSlot("/29390238/NYT/recommendations", [[970, 90], [970, 250],[728,90], ['fluid']], "div-top-ad")
+						.addService(googletag.pubads());
+
+					googletag.pubads().enableSingleRequest();
+					googletag.enableServices();
+				});
+
+			</script>
+
+<!-- only offer dismissals if the user is logged in AND has recommendations -->
+
+			<script type="text/javascript" src="https://static01.nyt.com/js/common/screen/DropDown.js"></script>
+			<script type="text/javascript" src="https://static01.nyt.com/js/util/tooltip.js"></script>
+	</head>
+	<body>
+		<a name="top"></a>
+		<div id="shell">
+		<ul id="memberTools">
+			
+			<li><a href="https://www.nytimes.com/auth/login?URI=http://">Log In</a></li>
+			<li><a href="https://www.nytimes.com/gst/regi.html">Register Now</a></li>
+			<li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+		
+		</ul>
+
+
+	<div class="tabsContainer">
+		<ul id="mainTabs" class="mainTabs tabs">
+			<li class="first mainTabHome"><a href="https://www.nytimes.com">Home Page</a></li>
+			<li class="mainTabTodaysPaper"><a href="https://www.nytimes.com/pages/todayspaper/index.html">Today's Paper</a></li>
+			<li class="mainTabVideo"><a href="https://www.nytimes.com/video">Video</a></li>
+			<li class="mainTabMostPopular"><a href="https://www.nytimes.com/mostpopular">Most Popular</a></li>
+		</ul>
+	</div>
+	<div id="editionToggle" class="editionToggle">
+		Edition: <span id="editionToggleUS"><a href="https://www.nytimes.com" onmousedown="dcsMultiTrack('DCS.dcssip','www.nytimes.com','DCS.dcsuri','/toggleIHTtoNYT.html','WT.ti','toggleIHTtoNYT','WT.z_dcsm','1');" onclick="NYTD.EditionPref.setUS();">U.S.</a></span> / <span id="editionToggleGlobal"><a href="https://international.nytimes.com" onmousedown="dcsMultiTrack('DCS.dcssip','www.nytimes.com','DCS.dcsuri','/toggleNYTtoIHT.html','WT.ti','toggleNYTtoIHT','WT.z_dcsm','1');" onclick="NYTD.EditionPref.setGlobal();">Global</a></span>
+	</div><!-- close editionToggle -->
+	<div id="page" class="tabContent active">
+		<div class="clearfix" id="masthead">
+			
+			<div id="branding" >
+				<a href="https://www.nytimes.com"><img src="https://static01.nyt.com/images/misc/nytlogo152x23.gif" alt="New York Times" id="NYTLogo"/></a>
+            </div>
+			
+			<h2><a href="/recommendations">Recommendations</a></h2>
+
+        </div>
+
+		<center> <!-- yolo -->
+			<div id="div-top-ad">
+				<script>
+							  googletag.cmd.push(function() {
+								 googletag.display("div-top-ad");
+							  });
+				</script>
+			</div>
+		</center>
+
+		<div id="main">
+
+			
+                    <div id="spanABCRegion">
+						<div class="columnGroup first">
+							<div class="recommendationsLogInWrap">
+							    <div class="recommendationsLogIn">
+							        <div class="recLogInWelcome clearfix">
+							            <p class="welcomeTxt">Get personalized recommendations, based on what you enjoy reading on NYTimes.com</p>
+
+							        </div><!-- close recLogInTxt -->
+							        <div class="recLogInAction opposingFloatControl wrap">
+							            <div class="recLoginButtons element1">
+							                <a href="https://www.nytimes.com/auth/login?URI=https://www.nytimes.com/recommendations" class="logIn">Log In</a>
+							                <a href="https://www.nytimes.com/regi?URI=https://www.nytimes.com/recommendations" class="registerNow">Register Now</a> 
+							                <span class="logInTxt">or</span>
+							                <a class="fb_button fb_button_medium" id="fbLogIn"><span class="fb_button_text">Log In With Facebook</span></a>
+							                <script src="https://static01.nyt.com/js2/build/facebook/connect.js"></script>
+											<script type="text/javascript" charset="utf-8">
+											$('fbLogIn').observe('click', function(){
+												NYTD.Facebook.User.login(function(){
+												window.setTimeout(function(){
+													window.location.reload();
+												}, 2000);
+												});
+											});
+											</script>
+							            </div><!-- close recLoginButtons-->
+										<div class="whatsThis element2">
+											<a href="https://www.nytimes.com/content/help/extras/recommendations/recommendations.html">What&rsquo;s This?</a> | 
+											<a href="https://www.nytimes.com/ref/membercenter/help/privacysummary.html">Privacy Policy</a>
+										</div><!-- close whatsThis -->
+							        </div><!-- close recLogInAction -->
+							        <div class="timesTLogo"></div>
+							    </div><!-- close recommendationsLogIn -->
+							</div><!-- close recommendationsLogInWrap -->
+						</div>
+				
+
+
+
+			
+
+
+
+			<div class="spanAB wrap">
+				<div class="abColumn">
+					<div class="columnGroup first">
+						<!-- TODO: Break article listing out of template -->
+					 
+						
+												<div id="recommendedArticlesModule" class="recommendedArticlesModule">
+							
+								<h2 class="header">Most Popular on NYTimes.com</h2>
+							
+						    <div id="suggestionsWrap" class="suggestionsListWrap">
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">1</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">Business Day</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/30/world/30Lauer1/30Lauer1-thumbStandard-v3.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/29/business/media/nbc-matt-lauer.html?src=rec&amp;recp=0" id="100000005576610">NBC Receives at Least 2 New Complaints About Matt Lauer</a>
+			</h3>
+			<p class="byline">
+			By ELLEN GABLER, JIM RUTENBERG and RACHEL ABRAMS | Nov 29th 2017
+			</p>
+			<p>Within hours of firing the “Today’’ co-anchor, the network was said to have gotten more complaints, including one involving a 2001 encounter in his office.</p>
+			<p class="meta tags">
+				SEXUAL HARASSMENT; ETHICS AND OFFICIAL MISCONDUCT
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">2</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">Magazine</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/12/03/magazine/03mag-hannity-triptych/03mag-hannity-triptych-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/28/magazine/how-far-will-sean-hannity-go.html?src=rec&amp;recp=1" id="100000005567971">How Far Will Sean Hannity Go?</a>
+			</h3>
+			<p class="byline">
+			By MATTHEW SHAER | Nov 28th 2017
+			</p>
+			<p>The Fox News host is willing to defend Trump at all costs — and is reaching more than 13 million people a day.</p>
+			<p class="meta tags">
+				NEWS AND NEWS MEDIA; RUSSIAN INTERFERENCE IN 2016 US ELECTIONS AND TIES TO TRUMP ASSOCIATES
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">3</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">Business Day</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/29/business/29RATINGS2/29RATINGS2-thumbStandard-v2.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/28/business/media/jimmy-fallon-tonight-show-ratings-colbert-kimmel-decline.html?src=rec&amp;recp=2" id="100000005574964">A Sharp Decline for Jimmy Fallon’s ‘Tonight Show’</a>
+			</h3>
+			<p class="byline">
+			By JOHN KOBLIN | Nov 28th 2017
+			</p>
+			<p>The latest ratings show that viewers are tuning out NBC’s fun-and-games approach and flocking to the politically engaged Stephen Colbert and Jimmy Kimmel.</p>
+			<p class="meta tags">
+				RATINGS (AUDIENCE MEASUREMENT); TELEVISION
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">4</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">U.S.</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/29/us/politics/29dc-mccain/29dc-mccain-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/28/us/politics/republican-victory-may-rest-once-again-with-mccain-this-time-on-taxes.html?src=rec&amp;recp=3" id="100000005574593">Republican Victory May Rest Once Again With McCain, This Time on Taxes</a>
+			</h3>
+			<p class="byline">
+			By ALAN RAPPEPORT | Nov 28th 2017
+			</p>
+			<p>After sinking his party’s hopes of repealing the Affordable Care Act earlier this year, the Republican from Arizona may hold the fate of a tax overhaul in his hands.</p>
+			<p class="meta tags">
+				FEDERAL TAXES (US); CORPORATE TAXES; LAW AND LEGISLATION; TAX CREDITS, DEDUCTIONS AND EXEMPTIONS
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">5</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">The Upshot</h6>
+				<div class="thumbnail">
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/interactive/2017/11/28/upshot/what-the-tax-bill-would-look-like-for-25000-middle-class-families.html?src=rec&amp;recp=4" id="100000005573554">What the Tax Bill Would Look Like for 25,000 Middle-Class Families</a>
+			</h3>
+			<p class="byline">
+			By QUOCTRUNG BUI and BEN CASSELMAN | Nov 28th 2017
+			</p>
+			<p>We modeled taxes for 25,000 middle-class families. Here’s how the Senate bill would affect each of them.</p>
+			<p class="meta tags">
+				FEDERAL TAXES (US); INCOME TAX; CORPORATE TAXES
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">6</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">U.S.</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/30/world/30DC-trump/30DC-trump-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/29/us/politics/trump-anti-muslim-videos-jayda-fransen.html?src=rec&amp;recp=5" id="100000005576608">Trump Shares Inflammatory Anti-Muslim Videos, and Britain’s Leader Condemns Them</a>
+			</h3>
+			<p class="byline">
+			By PETER BAKER and EILEEN SULLIVAN | Nov 29th 2017
+			</p>
+			<p>President Trump shared video posts from a British ultranationalist, Jayda Fransen, including “Muslim Destroys a Statue of Virgin Mary!”</p>
+			<p class="meta tags">
+				MUSLIMS AND ISLAM
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">7</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">U.S.</h6>
+				<div class="thumbnail">
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/28/us/politics/trump-access-hollywood-tape.html?src=rec&amp;recp=6" id="100000005575344">Trump Once Said the ‘Access Hollywood’ Tape Was Real. Now He’s Not Sure.</a>
+			</h3>
+			<p class="byline">
+			By MAGGIE HABERMAN and JONATHAN MARTIN | Nov 28th 2017
+			</p>
+			<p>The president’s changing story, which has stunned advisers, is part of a lifelong habit of attempting to create his own version of reality.</p>
+			<p class="meta tags">
+				UNITED STATES POLITICS AND GOVERNMENT
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">8</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">U.S.</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/29/us/politics/29dc-taxlive3/29dc-taxlive3-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/28/us/politics/republican-tax-bill.html?src=rec&amp;recp=7" id="100000005573118">G.O.P. Tax Bill Takes a Big Step Forward With Committee Vote</a>
+			</h3>
+			<p class="byline">
+			By THE NEW YORK TIMES | Nov 28th 2017
+			</p>
+			<p>Republican leaders passed the tax bill out of the Senate Budget Committee, clearing the way for it to come to the Senate floor later this week.</p>
+			<p class="meta tags">
+				
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">9</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">Opinion</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/28/opinion/28krugmanSub/28krugmanSub-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/27/opinion/senate-tax-bill-scam.html?src=rec&amp;recp=8" id="100000005572831">The Biggest Tax Scam in History</a>
+			</h3>
+			<p class="byline">
+			By PAUL KRUGMAN | Nov 27th 2017
+			</p>
+			<p>Republicans try to create a safe space for political double talk.</p>
+			<p class="meta tags">
+				FEDERAL TAXES (US)
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">10</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">Opinion</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/30/opinion/columnists/NK_THUMB/NK_THUMB-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/interactive/2017/11/28/opinion/columnists/missile-test-north-korea.html?src=rec&amp;recp=9" id="100000005551044">From North Korea, With Dread</a>
+			</h3>
+			<p class="byline">
+			By ADAM B. ELLICK, JONAH M. KESSEL, NICHOLAS KRISTOF and JOHN WOO | Nov 28th 2017
+			</p>
+			<p>Traveling to the world’s most isolated country, we found a nation furious with President Trump, and primed for nuclear war.</p>
+			<p class="meta tags">
+				UNITED STATES INTERNATIONAL RELATIONS
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">11</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">T Magazine</h6>
+				<div class="thumbnail">
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/interactive/2017/11/29/t-magazine/jay-z-dean-baquet-interview.html?src=rec&amp;recp=10" id="100000005529674">Jay-Z Discusses Rap, Marriage and Being a Black Man in Trump’s America</a>
+			</h3>
+			<p class="byline">
+			By DEAN BAQUET | Nov 29th 2017
+			</p>
+			<p>The music mogul talks with The New York Times’s executive editor at the close of an eventful year.</p>
+			<p class="meta tags">
+				RAP AND HIP-HOP
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">12</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">Opinion</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/28/opinion/28goldberg1/28goldberg1-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/27/opinion/trump-patriot-russia.html?src=rec&amp;recp=11" id="100000005573501">Odds Are, Russia Owns Trump</a>
+			</h3>
+			<p class="byline">
+			By MICHELLE GOLDBERG | Nov 27th 2017
+			</p>
+			<p>There is ample evidence the president is not working for America first.</p>
+			<p class="meta tags">
+				RUSSIAN INTERFERENCE IN 2016 US ELECTIONS AND TIES TO TRUMP ASSOCIATES; UNITED STATES POLITICS AND GOVERNMENT
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">13</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">Business Day</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/30/business/30xp-Keillor/30xp-Keillor-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/29/business/media/garrison-keillor-fired.html?src=rec&amp;recp=12" id="100000005577200">Minnesota Public Radio Drops Garrison Keillor Over Allegations of Improper Conduct</a>
+			</h3>
+			<p class="byline">
+			By MAYA SALAM | Nov 29th 2017
+			</p>
+			<p>The network says it has severed all business ties with Mr. Keillor, the creator of “A Prairie Home Companion.”</p>
+			<p class="meta tags">
+				RADIO; NEWS AND NEWS MEDIA
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">14</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">Business Day</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/30/business/30xp-lauertimeline-2/30xp-lauertimeline-2-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/29/business/media/matt-lauer-history.html?src=rec&amp;recp=13" id="100000005576698">Matt Lauer’s History at ‘Today’: Two Decades of Highs and Lows</a>
+			</h3>
+			<p class="byline">
+			By MATTHEW HAAG | Nov 29th 2017
+			</p>
+			<p>From some awkward interviews to narrating the events of 9/11, Mr. Lauer had spent more than 20 years at “Today” before he was fired this week.</p>
+			<p class="meta tags">
+				SEXUAL HARASSMENT; TELEVISION
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">15</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">World</h6>
+				<div class="thumbnail">
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/28/world/asia/north-korea-missile-test.html?src=rec&amp;recp=14" id="100000005467655">North Korea Fires a Ballistic Missile, in a Further Challenge to Trump</a>
+			</h3>
+			<p class="byline">
+			By MARK LANDLER, CHOE SANG-HUN and HELENE COOPER | Nov 28th 2017
+			</p>
+			<p>The missile flew higher than previous launches, and came despite President Trump’s warnings to the North.</p>
+			<p class="meta tags">
+				UNITED STATES INTERNATIONAL RELATIONS
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">16</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">World</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/29/world/29uk-royals/29uk-royals-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/28/world/europe/uk-royal-wedding-harry-meghan-markle.html?src=rec&amp;recp=15" id="100000005574652">Royal Engagement Seen as Symbol of Change, With Asterisks</a>
+			</h3>
+			<p class="byline">
+			By PATRICK KINGSLEY | Nov 28th 2017
+			</p>
+			<p>Some media commentators warned that the powerful symbolism did not diminish structural racism across Britain.</p>
+			<p class="meta tags">
+				ROYAL FAMILIES
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">17</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">World</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/28/world/28royalassess1/28royalassess1-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/27/world/europe/prince-harry-meghan-markle-engagement-royal.html?src=rec&amp;recp=16" id="100000005573295">Prince Harry Casts Aside Ghosts of Royal Marriages Past</a>
+			</h3>
+			<p class="byline">
+			By SARAH LYALL | Nov 27th 2017
+			</p>
+			<p>Harry, fifth in line to the throne, may never be king. But his mere choice of bride may give Britain a strong shove into the future.</p>
+			<p class="meta tags">
+				ROYAL FAMILIES; RACE AND ETHNICITY
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">18</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">World</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/29/world/29bangkok-snakes-1sub/27bangkok-snakes-1sub-thumbStandard-v2.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/28/world/asia/bangkok-snakes.html?src=rec&amp;recp=17" id="100000005563729">Lurking in Toilets, Swimming the Streets: Snakes of Bangkok Move In</a>
+			</h3>
+			<p class="byline">
+			By RICHARD C. PADDOCK and RYN JIRENUWAT | Nov 28th 2017
+			</p>
+			<p>The Thai capital has always been rich in reptiles, but wet weather and urban growth are creating more snake-on-human encounters of an unpleasant kind.</p>
+			<p class="meta tags">
+				SNAKES
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">19</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">World</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/29/world/29canada-gayapology/29canada-gayapology-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/28/world/canada/canada-apology-gay-purge-compensation.html?src=rec&amp;recp=18" id="100000005574456">Canada Offers $85 Million to Victims of Its ‘Gay Purge,’ as Trudeau Apologizes</a>
+			</h3>
+			<p class="byline">
+			By DAN LEVIN | Nov 28th 2017
+			</p>
+			<p>Prime Minister Justin Trudeau apologized for Canada’s discrimination against gays and lesbians who were forced out of the military and public service.</p>
+			<p class="meta tags">
+				HOMOSEXUALITY AND BISEXUALITY; DISCRIMINATION
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+									
+
+									<div class="story singleRule"> <!-- open single story -->
+	<div class="opposingFloatControl wrap">
+		<!-- <div class="storyNumber element1">20</div>
+		<div class="storyExcerpt element2"> -->
+        <!-- overwrite width from style.css, TODO, static file changes?? -->
+		<div class="storyExcerpt" style="width: 520px;">
+			<h6 class="kicker">World</h6>
+				<div class="thumbnail">
+						
+							<img src="https://static01.nyt.com/images/2017/11/30/world/30Hague3/30Hague3-thumbStandard.jpg" height="75" width="75"/>
+						
+					</a>
+                </div>
+			<h3>
+				<a href="https://www.nytimes.com/2017/11/29/world/europe/bosnian-war-croatia.html?src=rec&amp;recp=19" id="100000005576037">Croatian War Criminal Dies After Swallowing Poison in Court</a>
+			</h3>
+			<p class="byline">
+			By MARLISE SIMONS | Nov 29th 2017
+			</p>
+			<p>At a tribunal considering appeals by six Croats convicted over actions in Bosnia, a former general swallowed the contents of a small container after his sentence was upheld.</p>
+			<p class="meta tags">
+				WAR CRIMES, GENOCIDE AND CRIMES AGAINST HUMANITY; DEFENSE AND MILITARY FORCES
+			</p>
+		</div>
+	</div>
+</div><!-- close story -->
+
+
+								
+
+            				</div><!-- close suggestionsListWrap -->
+
+						</div><!-- close recommendedArticlesModule --> 
+
+						
+					</div>
+				</div><!-- close abColumn -->
+				<div class="cColumn">
+			<!--cur: prev:-->
+				<div class="columnGroup first">
+						<!-- TODO: Break user info sidebar out of template -->
+						<div id="sidebarUserInfo" class="sidebarUserInfo">
+							<div class="sidebarHeader module wrap">
+								
+
+    						</div><!-- close sidebarHeader -->
+							
+
+							
+							
+    						
+
+							
+								<div class="whatsThis module wrap">
+									<p>Recommendations are based on the NYTimes content you have viewed recently. This information is available only to you; we do not share your history or trends with other users or other sites. <a href="https://www.nytimes.com/content/help/extras/recommendations/recommendations.html">Learn More</a></p>
+								</div><!-- close whatsThis -->
+							
+						</div><!-- close sidebarUserInfo -->
+					</div>
+				</div>
+			</div><!-- close spanAB -->
+		</div><!-- close main -->
+		<footer class="pageFooter">
+			<div class="inset">
+				<nav class="pageFooterNav">
+					<ul class="pageFooterNavList wrap">
+						<li class="firstItem"><a href="http://www.nytco.com/">&copy; 2014 The New York Times Company</a></li>
+						<li><a href="http://spiderbites.nytimes.com/">Site Map</a></li>
+						<li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+						<li><a href="https://www.nytimes.com/ref/membercenter/help/privacy.html#pp">Your Ad Choices</a></li>
+						<li><a href="https://www.nytimes.whsites.net/mediakit/">Advertise</a></li>
+						<li><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html ">Terms of Sale</a></li>
+						<li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html">Terms of Service</a></li>
+						<li><a href="https://www.nytco.com/careers">Work With Us</a></li>
+						<li><a href="https://www.nytimes.com/rss">RSS</a></li>
+						<li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+						<li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+						<li class="lastItem"><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+					</ul>
+				</nav>
+			</div><!-- close inset -->
+		</footer><!-- close pageFooter -->
+	</div><!-- close page -->
+</div><!-- close shell -->
+			
+
+<script src="https://static01.nyt.com/js/app/analytics/trackingTags_v1.1.js" type="text/javascript"></script><noscript><div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://wt.o.nytimes.com/dcsym57yw10000s1s8g0boozt_9t1x/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=1.0.7"/></div></noscript>
+
+<!-- Start UPT call --><img height="1" width="3" border="0" src="https://up.nytimes.com/?d=0//&amp;t=&amp;s=0&amp;r=&amp;u=www.nytimes.com%2Frecommendations"><!-- End UPT call -->
+</body>
+</html>
