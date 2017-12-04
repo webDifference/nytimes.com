@@ -1,80 +1,1236 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-lens section-multimedia tone-feature"  itemscope xmlns:og="http://opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-lens section-multimedia tone-feature" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-lens section-multimedia tone-feature" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-lens section-multimedia tone-feature" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <title>Forbidden</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="infinite_scroll_api" content="https://lens.blogs.nytimes.com/more_posts_json/page/2/?homepage=1" />
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Main" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="articleSection" property="article:section" content="Multimedia" />
+<meta name="CG" content="Multimedia" />
+<meta name="SCG" content="lens" />
+<meta name="BN" content="lens" />
+<meta name="robots" content="noodp">
+<meta name="keywords" content="Photography, Photos, Video, Visual Journalism, Photo Journalism, Photo Blog, New York Times Photo Archive." />
+<link rel="canonical" href="https://lens.blogs.nytimes.com/" />
+<meta name="description" content="Lens is the photojournalism blog of The New York Times, presenting the finest and most interesting visual and multimedia reporting — photographs, videos and slide shows. A showcase for Times photographers and the pictures of the day, the Times photo blog also seeks to highlight the best work of other newspapers, magazines and news and picture agencies; in print, in books, in galleries, in museums and on the Web." />
+<link rel='shortlink' href='https://nyti.ms/2BIMCbO' />
+<link rel='https://github.com/WP-API/WP-API' href='https://lens.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/lens/frontpage" />
+<meta name="ad_sensitivity" content="noxxl" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://lens.blogs.nytimes.com/feed/" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/lens/" />
+<meta name="dfp-ad-unit-path" content="multimedia/lens/sectionfront" />			<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>New York Times Photojournalism - Photography, Video and Visual Journalism Archives - Lens Blog - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://a1.nyt.com/assets/blogs/20171030-150445/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://a1.nyt.com/assets/blogs/20171030-150445/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://a1.nyt.com/assets/blogs/20171030-150445/css/blogs/lens.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://a1.nyt.com/assets/blogs/20171030-150445/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+            	<script src="https://a1.nyt.com/assets/blogs/20171030-150445/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(t,o)}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt","jkiddScript"]</script>
+<script>
+var require = {
+    baseUrl: 'https://a1.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/20171030-150445/js/foundation',
+        'shared': 'blogs/20171030-150445/js/shared',
+        'blogs': 'blogs/20171030-150445/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://a1.nyt.com/assets/blogs/20171030-150445/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://a1.nyt.com/assets/blogs/20171030-150445/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	<script>
+	require( ['foundation/main'], function() {
+		require( ['jquery/nyt'], function( jQuery ) {
+			!function(a,b){"use strict";var c=function(a,b,c){var d;return function(){function g(){c||a.apply(e,f),d=null}var e=this,f=arguments;d?clearTimeout(d):c&&a.apply(e,f),d=setTimeout(g,b||100)}};jQuery.fn[b]=function(a){return a?this.bind("resize",c(a)):this.trigger(b)}}(jQuery,"smartresize"),function(a){"use strict";function d(){this.reset()}function k(){a(".balance-text").balanceText()}var b=document.documentElement.style,c=b.textWrap||b.WebkitTextWrap||b.MozTextWrap||b.MsTextWrap||b.OTextWrap;d.prototype.reset=function(){this.index=0,this.width=0};var e=function(a){return Boolean(a.match(/^\s$/))},f=function(b){b.find('br[data-owner="balance-text"]').replaceWith(" ");var c=b.find('span[data-owner="balance-text"]');if(c.length>0){var d="";c.each(function(){d+=a(this).text(),a(this).remove()}),b.html(d)}},g=function(a){return b=a.get(0).currentStyle||window.getComputedStyle(a.get(0),null),"justify"===b.textAlign},h=function(b,c,d){c=a.trim(c);var e=c.split(" ").length;if(c+=" ",2>e)return c;var f=a("<span></span>").html(c);b.append(f);var g=f.width();f.remove();var h=Math.floor((d-g)/(e-1));return f.css("word-spacing",h+"px").attr("data-owner","balance-text"),a("<div></div>").append(f).html()},i=function(a,b){return 0===b||b===a.length||e(a.charAt(b-1))&&!e(a.charAt(b))},j=function(a,b,c,d,e,f,g){for(var h;;){for(;!i(b,f);)f+=e;if(a.text(b.substr(0,f)),h=a.width(),0>e?d>=h||0>=h||0===f:h>=d||h>=c||f===b.length)break;f+=e}g.index=f,g.width=h};a.fn.balanceText=function(){return c?this:this.each(function(){var b=a(this),c=5e3;f(b);var e="";b.attr("style")&&b.attr("style").indexOf("line-height")>=0&&(e=b.css("line-height")),b.css("line-height","normal");var i=b.width(),k=b.height(),l=b.css("white-space"),m=b.css("float"),n=b.css("display"),o=b.css("position");b.css({"white-space":"nowrap","float":"none",display:"inline",position:"static"});var p=b.width(),q=b.height(),r="pre-wrap"===l?0:q/4;if(i>0&&p>i&&c>p){for(var s=b.text(),t="",u="",v=g(b),w=Math.round(k/q),x=w;x>1;){var y=Math.round((p+r)/x-r),z=Math.round((s.length+1)/x)-1,A=new d;j(b,s,i,y,-1,z,A);var B=new d;z=A.index,j(b,s,i,y,1,z,B),A.reset(),z=B.index,j(b,s,i,y,-1,z,A);var C;C=0===A.index?B.index:i<B.width||A.index===B.index?A.index:Math.abs(y-A.width)<Math.abs(B.width-y)?A.index:B.index,u=s.substr(0,C),v?t+=h(b,u,i):(t+=u.replace(/\s+$/,""),t+='<br data-owner="balance-text" />'),s=s.substr(C),x--,b.text(s),p=b.width()}v?b.html(t+h(b,s,i)):b.html(t+s)}b.css({position:o,display:n,"float":m,"white-space":l,"line-height":e})})},a(window).ready(k),a(window).smartresize(k)}(jQuery);
+			jQuery( function() {
+				var balanceText = function() {
+					jQuery('.entry-title span').balanceText();
+				};
+				jQuery('body').removeClass( 'lens-hide-titles' );
+				balanceText();
+				jQuery(document).on( 'infiniteScroll:itemsAdded', balanceText );
+				jQuery(window).on( 'resize', balanceText );
+			} );
+		});
+	} );
+</script>		</head><body class="home blog lens-has-ad theme-lede-promo-top-light-on-dark theme-lede-promo-bottom-light-on-dark lens-hide-titles blog-universal nyt-blog-lens" id="" data-env="production" data-region="sea1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://a1.nyt.com/assets/blogs/20171030-150445/images/foundation/logos/', 'Multimedia', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="https://lens.blogs.nytimes.com">
+                Lens            </a>
+			        </span>
 
-  	<style type="text/css">
-
-    	body {
-        margin: 0;
-        text-align: center;
-        font: 1em/1.3em "Lucida Grande", Arial, Arial, sans-serif;
-        background-color: #efefef ;
-      }
+        
+    </h6>
+</div><!-- close story-meta -->
 
 
-    	div.outer {
-    	  font-size: 75%;
-    		position: absolute;
-    		left: 50%;
-    		top: 50%;
-    		width: 400px;
-    		height: 200px;
-    		margin-left: -200px;
-    		margin-top: -100px;
-    	}
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+<div id="liftoff-nyt5-bar1" class="hidden"></div>
+                        <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
 
-    	.dialog {
-    	  padding: 0;
-    	  background-color: white;
-    	  border-top: 1px solid #ddd;
-    	  border-right: 1px solid #ccc;
-    	  border-left: 1px solid #ddd;
-    	  border-bottom: 1px solid #ccc;
-    	}
 
-    	h1 {
-    	  font-size: 100%;
-    	  background: #000;
-    	  color: white;
-    	  margin: 0;
-    	  padding: 5px 10px;
-    	}
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+											<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
 
-    	h1 span {
-	      float: right;
-				font-size: 75%;
-    	  color: #666;
-    	}
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
 
-    	.block {
-    	  text-align: left;
-    	  width: 250px;
-    	  margin: 0 auto;
-    	  margin-top: 2em;
-    	}
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div class="lens-masthead-and-lede" data-layout="full-bleed" data-aspect-ratio="">
+	<div class="lens-masthead-container">
+	<div class="lens-masthead">
+		<a href="https://lens.blogs.nytimes.com" class="logo">
+						<h1 class="visually-hidden">Lens: Photography, Video and Visual Journalism</h1>		</a>
+		<div class="social-links">
+			<h4>Follow Lens:</h4>
+			<ul class="menu">
+				<li class="facebook">
+					<a href="https://facebook.com/nytimesphoto">
+						<i class="icon"></i>
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li class="twitter">
+					<a href="https://twitter.com/nytimesphoto">
+						<i class="icon"></i>
+						<span>Twitter</span>
+					</a>
+				</li>
+				<li class="rss">
+					<a href="https://lens.blogs.nytimes.com/feed/">
+						<i class="icon"></i>
+						<span>RSS</span>
+					</a>
+				</li>
+ 			</ul>
+		</div>
+		<div class="clear"></div>
+			</div>
+</div>			<div class="lede entry hentry lede-content post-152140 post type-post status-publish category-uncategorized tag-child-abuse-and-neglect tag-human-trafficking tag-india tag-kidnapping-and-hostages tag-photography tag-shakti-vahini tag-smita-sharma tag-women-and-girls des-child-abuse-and-neglect des-human-trafficking des-kidnapping-and-hostages des-photography des-women-and-girls geo-india nyt_request_per-smita-sharma nyt_request_org-shakti-vahini news_keywords-india news_keywords-photography" id="post-152140">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005581813" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/12/04/blogs/04-lens-smita-slide-T8HD/04-lens-smita-slide-T8HD-superJumbo.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+			<style>
+			.theme-lede-promo-full-bleed .lede-content .image {
+				background: url('https://static01.nyt.com/images/2017/12/04/blogs/04-lens-smita-slide-T8HD/04-lens-smita-slide-T8HD-superJumbo.jpg');
+				background-position: center center;
+				background-size: cover;
+			}
+			.theme-lede-promo-full-bleed .lede-content .image img {
+				display: none;
+			}
+		</style>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/12/04/blogs/04-lens-smita-slide-T8HD/04-lens-smita-slide-T8HD-superJumbo.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/12/04/blogs/04-lens-smita-slide-T8HD/04-lens-smita-slide-T8HD-superJumbo.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/12/04/blogs/telling-stories-of-domestic-slavery-in-india.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">15<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">Telling Stories of Domestic Slavery in India</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
 
-  	</style>
+	</div>
 
-</head>
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">Telling Stories of Domestic Slavery in India</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Smita Sharma</p>
+		</div>
+	</figcaption>
 
-<body>
-<div class="outer">
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/12/04/blogs/04-lens-smita-slide-T8HD/04-lens-smita-slide-T8HD-superJumbo.jpg" />
+	<meta itemprop="height" content="1367" />
+	<meta itemprop="width" content="2048" />
+	</figure>
+</div>		<div class="story-meta-and-excerpt-container">
+			<a href="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to Telling Stories of Domestic Slavery in India"><h3 itemprop="headline" class="story-heading entry-title"><span>Telling Stories of Domestic Slavery in India</span></h3></a>			<div class="story-meta entry-meta">
+				<span class="author vcard byline-author" itemscope="" itemprop="author creator" itemtype="http://schema.org/Person">By <span class="fn" itemprop="name">Remy Tumin</span></span>				<!-- date published --><time class="dateline " datetime="2017-12-04T09:00:08+00:00" itemprop="datePublished">Dec. 4, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Dec. 4, 2017</span>				<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/"></a>
+				</span>			</div>
+			<div class="excerpt">
+													<p><span class="excerpt-inner"> Smita Sharma, a photojournalist, has been documenting survivors of trafficking and their families in Dooars, India.</span><a href="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+							</div>
+			<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/" data-title="Telling Stories of Domestic Slavery in India" data-description=" Smita Sharma, a photojournalist, has been documenting survivors of trafficking and their families in Dooars, India."></div>		</div><!-- close story-meta-and-excerpt-container -->
+	</div><!-- close lede-content -->
+	</div><!-- close lens-masthead-and-lede -->
+<div class="generic-wrap after-masthead-and-lede">
+				<article class="entry hentry lede lede-content with-ad post-152140 post type-post status-publish category-uncategorized tag-child-abuse-and-neglect tag-human-trafficking tag-india tag-kidnapping-and-hostages tag-photography tag-shakti-vahini tag-smita-sharma tag-women-and-girls des-child-abuse-and-neglect des-human-trafficking des-kidnapping-and-hostages des-photography des-women-and-girls geo-india nyt_request_per-smita-sharma nyt_request_org-shakti-vahini news_keywords-india news_keywords-photography" id="post-152140">
+		<a href="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to Telling Stories of Domestic Slavery in India"><h3 itemprop="headline" class="story-heading entry-title"><span>Telling Stories of Domestic Slavery in India</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author" itemscope="" itemprop="author creator" itemtype="http://schema.org/Person">By <span class="fn" itemprop="name">Remy Tumin</span></span>			<!-- date published --><time class="dateline " datetime="2017-12-04T09:00:08+00:00" itemprop="datePublished">Dec. 4, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Dec. 4, 2017</span>			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/"></a>
+				</span>		</div>
+		<div class="shareTools sharetools layout-vertical" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/" data-title="Telling Stories of Domestic Slavery in India" data-description=" Smita Sharma, a photojournalist, has been documenting survivors of trafficking and their families in Dooars, India."></div>				<div class="excerpt">
+							<p><span class="excerpt-inner"> Smita Sharma, a photojournalist, has been documenting survivors of trafficking and their families in Dooars, India.</span><a href="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+					</div>
+	</article>
+			<div class="a-column hfeed">
+				<article class="entry hentry lede lede-content without-ad post-152140 post type-post status-publish category-uncategorized tag-child-abuse-and-neglect tag-human-trafficking tag-india tag-kidnapping-and-hostages tag-photography tag-shakti-vahini tag-smita-sharma tag-women-and-girls des-child-abuse-and-neglect des-human-trafficking des-kidnapping-and-hostages des-photography des-women-and-girls geo-india nyt_request_per-smita-sharma nyt_request_org-shakti-vahini news_keywords-india news_keywords-photography" id="post-152140">
+			<a href="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to Telling Stories of Domestic Slavery in India"><h3 itemprop="headline" class="story-heading entry-title"><span>Telling Stories of Domestic Slavery in India</span></h3></a>			<div class="story-meta entry-meta">
+				<span class="author vcard byline-author" itemscope="" itemprop="author creator" itemtype="http://schema.org/Person">By <span class="fn" itemprop="name">Remy Tumin</span></span><!-- date published --><time class="dateline " datetime="2017-12-04T09:00:08+00:00" itemprop="datePublished">Dec. 4, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Dec. 4, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/"></a>
+				</span>			</div>
+			<div class="shareTools sharetools layout-vertical" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/" data-title="Telling Stories of Domestic Slavery in India" data-description=" Smita Sharma, a photojournalist, has been documenting survivors of trafficking and their families in Dooars, India."></div>			<div class="excerpt">
+				<p><span class="excerpt-inner"> Smita Sharma, a photojournalist, has been documenting survivors of trafficking and their families in Dooars, India.</span><a href="https://lens.blogs.nytimes.com/2017/12/04/telling-stories-of-domestic-slavery-in-india/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+			</div>
+		</article>
+						<script>(function() {
+	var adLoaded = false,
+		hasAd = ( document.body.className.indexOf( 'lens-has-ad' ) > -1 );
+	function loadAd( location ) {
+		if ( adLoaded || ! hasAd )
+			return;
+		if ( location == 'a-column' ) {
+			document.write( '<div class="module ad" id="MiddleRight"></div>' );
+		} else {
+			var adElement = document.createElement( 'div' );
+			adElement.className = 'module ad';
+			adElement.id = 'MiddleRight';
+			var article = document.querySelector('.lede-content.with-ad');
+			if ( article != null ) {
+				var articleParent = article.parentNode;
+				articleParent.insertBefore( adElement, article );
+			}
+		}
+		adLoaded = true;
+	}
+	var getHeight = function( element, include ) {
+		if ( ! include ) {
+			include = {
+				padding: false,
+				border:  false,
+				margin:  false
+			};
+		}
+		var height = masthead.clientHeight;
+		if ( ! include.padding ) {
+			height -= parseInt( window.getComputedStyle( element, null )
+			                .getPropertyValue( 'padding-top' ) ) +
+			          parseInt( window.getComputedStyle( element, null )
+			                .getPropertyValue( 'padding-bottom' ) );
+		}
 
-		<div class="dialog" style="text-align: center;">
-			<h1><span>403</span>Forbidden Request</h1>
-			<div class="block">
-    	  <p>The server understood the request, but is refusing to fulfill it because access is forbidden to the requested resource.</p>
-      </div>
 
-  	  <div class="block">
-        <p>Back to <a href="#" onClick="history.back(); return false;">previous page</a> | <a href="http://shopify.com/">shopify.com</a></p>
-   	  </div>
+		if ( include.border ) {
+			height += parseInt( window.getComputedStyle( element, null )
+			                .getPropertyValue( 'border-top-width' ) ) +
+			          parseInt( window.getComputedStyle( element, null )
+			                .getPropertyValue( 'border-bottom-width' ) );
+		}
+		if ( include.margin ) {
+			height += parseInt( window.getComputedStyle( element, null )
+			                .getPropertyValue( 'margin-top' ) ) +
+			          parseInt( window.getComputedStyle( element, null )
+			                .getPropertyValue( 'margin-bottom' ) );
+		}
+		return height;
+	};
+	var setHomePromoLayout = function() {
+		var promoImg = document.querySelector('.lens-masthead-and-lede .promo img'),
+			lensMastheadAndLede = document.querySelector('.lens-masthead-and-lede'),
+			promoImgMetaHeight = document.querySelector('.lede-content [itemprop="height"]'),
+			promoImgMetaWidth = document.querySelector('.lede-content [itemprop="width"]'),
+			potentialHeight = 0,
+			imageAspectRatio = 0;
 
-	 </div>
+
+		if ( ! promoImg ) {
+			document.querySelector( '.lens-masthead-and-lede .lede-content').style.display = 'none';
+			document.querySelector( '.after-masthead-and-lede > .lede-content' ).style.display = 'none';
+			return;
+		// If the proportions are in meta fields, use that to calculate aspect ratio.
+		} else if ( promoImgMetaHeight && promoImgMetaWidth ) {
+			var height = promoImgMetaHeight.getAttribute( 'content' ),
+				width = promoImgMetaWidth.getAttribute( 'content' );
+			imageAspectRatio = width / height;
+		// Otherwise, load the image and get the actual dimensions.
+		} else {
+			imageAspectRatio = promoImg.width / promoImg.height;
+			if ( ! imageAspectRatio ) {
+				tempImage = new Image();
+				tempImage.src = promoImg.getAttribute( 'src' );
+				tempImage.addEventListener( 'load', function() {
+					tempImage.parentNode.removeChild(tempImage);
+					setHomePromoLayout();
+				});
+				document.body.appendChild( tempImage );
+				return;
+			}
+		}
+		var idealLayout = lensMastheadAndLede.getAttribute( 'data-layout' );
+		if ( mastheadEl = document.querySelector('.masthead') ) {
+			potentialHeight += getHeight( mastheadEl, { padding: true, border: true, margin: true } );
+		}
+		if ( idealLayout == 'no-crop' ) {
+			potentialHeight += getHeight( document.querySelector('.lens-masthead-container'), { padding: true, border: true, margin: true } )
+			                 + document.querySelector('.lens-masthead-container').offsetWidth / imageAspectRatio;
+			// Switch to media left, content right
+			if ( window.innerHeight - potentialHeight < 100 ) {
+				document.body.className = document.body.className.replace( 'theme-lede-promo-no-crop', '' );
+				document.body.className = document.body.className.replace( 'theme-lede-promo-media-left-content-right', '' );
+				document.body.className = document.body.className + ' theme-lede-promo-media-left-content-right';
+				if ( hasAd ) {
+					loadAd( 'a-column' );
+				}
+				if ( document.querySelector( '.after-masthead-and-lede > .lede-content' ) ) {
+					document.querySelector( '.after-masthead-and-lede > .lede-content' ).style.display = 'none';
+				}
+				if ( document.querySelector( '.a-column .lede-content' ) ) {
+					document.querySelector( '.a-column .lede-content' ).style.display = 'none';
+				}
+			} else {
+				document.body.className = document.body.className.replace( 'theme-lede-promo-no-crop', '' );
+				document.body.className = document.body.className.replace( 'theme-lede-promo-media-left-content-right', '' );
+				document.body.className = document.body.className + ' theme-lede-promo-no-crop';
+				// Show the lede content above A+C columns
+				if ( hasAd ) {
+					loadAd();
+					document.querySelector( '.a-column .lede-content' ).style.display = 'none';
+					document.querySelector( '.after-masthead-and-lede > .lede-content' ).style.display = 'block';
+				// Show the lede content in the A column
+				} else {
+					document.querySelector( '.a-column .lede-content' ).style.display = 'block';
+					document.querySelector( '.after-masthead-and-lede > .lede-content' ).style.display = 'none';
+				}
+			}
+		// The promo image should attempt to be rendered in full bleed layout.
+		} else if ( idealLayout == 'full-bleed' ) {
+			var intendedAspectRatio = 0;
+			if ( window.innerWidth >= 1125 ) {
+				intendedAspectRatio = 16 / 9;
+			} else if ( window.innerWidth >= 1125 ) {
+				intendedAspectRatio = 1.7243;
+			} else if ( window.innerWidth >= 1024 ) {
+				intendedAspectRatio = 1.6704;
+			} else if ( window.innerWidth >= 975 ) {
+				intendedAspectRatio = 1.6469;
+			} else if ( window.innerWidth >= 768 ) {
+				intendedAspectRatio = 1.6587;
+			}
+
+			potentialHeight += document.querySelector('.main').offsetWidth / intendedAspectRatio;
+			// Switch to media left, content right
+			if ( window.innerHeight - potentialHeight < 100 ) {
+				loadAd( 'a-column' );
+				document.body.className = document.body.className.replace( 'theme-lede-promo-full-bleed', '' );
+				document.body.className = document.body.className.replace( 'theme-lede-promo-media-left-content-right', '' );
+				document.body.className = document.body.className + ' theme-lede-promo-media-left-content-right';
+				document.querySelector('.lede-content .image').style.height = 'auto';
+				document.querySelector( '.after-masthead-and-lede > .lede-content, .a-column .lede-content' ).style.display = 'none';
+			// Switch to full bleed
+			} else {
+				document.body.className = document.body.className.replace( 'theme-lede-promo-full-bleed', '' );
+				document.body.className = document.body.className.replace( 'theme-lede-promo-media-left-content-right', '' );
+				document.body.className = document.body.className + ' theme-lede-promo-full-bleed';
+				document.querySelector('.lede-content .image').style.height = document.querySelector('.main').offsetWidth / intendedAspectRatio + 'px';
+				// Show the lede content above A+C columns
+				if ( hasAd ) {
+					loadAd();
+					document.querySelector( '.a-column .lede-content' ).style.display = 'none';
+					document.querySelector( '.after-masthead-and-lede > .lede-content' ).style.display = 'block';
+				// Show the lede content in the A column
+				} else {
+					document.querySelector( '.a-column .lede-content' ).style.display = 'block';
+					document.querySelector( '.after-masthead-and-lede > .lede-content' ).style.display = 'none';
+				}
+			}
+		// The promo image doesn't meet the aspect ratio required and should be forced into the media-left-content-right layout.
+		} else if ( idealLayout == 'media-left-content-right' ) {
+			document.body.className = document.body.className.replace( /(?:^|\s)theme-lede-promo-media-left-content-right(?!\S)/g , '' );
+			document.body.className = document.body.className + ' theme-lede-promo-media-left-content-right';
+			loadAd( 'a-column' );
+			potentialHeight += getHeight( document.querySelector('.lens-masthead-container'), { padding: true, border: true, margin: true } )
+			                +  document.querySelector('.lens-masthead-and-lede .media').offsetWidth / imageAspectRatio;
+			if ( window.innerHeight - potentialHeight > 0 ) {
+				document.body.className = document.body.className.replace( /(?:^|\s)small-lede(?!\S)/g , '' );
+			} else {
+				document.body.className = document.body.className.replace( /(?:^|\s)small-lede(?!\S)/g , '' );
+				document.body.className = document.body.className + ' small-lede';
+			}
+		}
+	};
+
+	if ( document.body.className.indexOf( 'home' ) != -1 ) {
+		window.addEventListener( 'resize', setHomePromoLayout );
+		setHomePromoLayout();
+	}
+})();</script>
+				<div class="recent-posts">
+			<section class="posts">
+				<div class="content">
+					<h3 class="section-heading">Recent Posts</h3>
+													<article class="entry hentry post-152132 post type-post status-publish category-uncategorized tag-donovan-chris-photographer tag-education-k-12 tag-flint-mich tag-football tag-interscholastic-athletics tag-men-and-boys tag-photography tag-water-pollution per-donovan-chris-photographer des-education-k-12 des-football des-interscholastic-athletics des-men-and-boys des-photography des-water-pollution geo-flint-mich news_keywords-football news_keywords-photography" id="post-152132">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005577734" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/12/01/blogs/01-lens-flint-slide-X1RX/01-lens-flint-slide-X1RX-mediumThreeByTwo440.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/12/01/in-flint-high-school-football-is-no-game/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/12/01/blogs/01-lens-flint-slide-X1RX/01-lens-flint-slide-X1RX-mediumThreeByTwo440.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/12/01/blogs/01-lens-flint-slide-X1RX/01-lens-flint-slide-X1RX-mediumThreeByTwo440.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/12/01/blogs/in-flint-high-school-football-is-no-game.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">18<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">In Flint, High School Football Is No Game</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">In Flint, High School Football Is No Game</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Chris Donovan</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/12/01/blogs/01-lens-flint-slide-X1RX/01-lens-flint-slide-X1RX-mediumThreeByTwo440.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/12/01/in-flint-high-school-football-is-no-game/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to In Flint, High School Football Is No Game"><h3 itemprop="headline" class="story-heading entry-title"><span>In Flint, High School Football Is No Game</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">Justin Porter</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-12-01T09:00:59+00:00" itemprop="datePublished">Dec. 1, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Dec. 1, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/12/01/in-flint-high-school-football-is-no-game/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">Chris Wilson, a former professional football player, returned to his Michigan hometown to coach its last remaining public high school team, offering lessons that go far beyond the field.</span><a href="https://lens.blogs.nytimes.com/2017/12/01/in-flint-high-school-football-is-no-game/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/12/01/in-flint-high-school-football-is-no-game/" data-title="In Flint, High School Football Is No Game" data-description="Chris Wilson, a former professional football player, returned to his Michigan hometown to coach its last remaining public high school team, offering lessons that go far beyond the field."></div></article>
+													<article class="entry hentry post-152121 post type-post status-publish category-uncategorized tag-defense-and-military-forces tag-guatemala tag-photography tag-politics-and-government tag-refugees-and-displaced-persons-2 tag-united-states-defense-and-military-forces des-defense-and-military-forces des-photography des-politics-and-government des-refugees-and-displaced-persons des-united-states-defense-and-military-forces geo-guatemala news_keywords-guatemala news_keywords-photography" id="post-152121">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005574741" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/11/29/blogs/29-lens-guatemala-slide-09Y9/29-lens-guatemala-slide-09Y9-mediumThreeByTwo440.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/11/29/witnessing-dignity-amid-death-in-guatemalas-civil-war/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/11/29/blogs/29-lens-guatemala-slide-09Y9/29-lens-guatemala-slide-09Y9-mediumThreeByTwo440.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/11/29/blogs/29-lens-guatemala-slide-09Y9/29-lens-guatemala-slide-09Y9-mediumThreeByTwo440.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/11/29/blogs/witnessing-dignity-amid-death-in-guatemalas-civil-war.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">18<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">Witnessing Dignity Amid Death in Guatemala’s Civil War</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">Witnessing Dignity Amid Death in Guatemala’s Civil War</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Robert Nickelsberg/Getty Images</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/11/29/blogs/29-lens-guatemala-slide-09Y9/29-lens-guatemala-slide-09Y9-mediumThreeByTwo440.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/11/29/witnessing-dignity-amid-death-in-guatemalas-civil-war/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to Witnessing Dignity Amid Death in Guatemala&#8217;s Civil War"><h3 itemprop="headline" class="story-heading entry-title"><span>Witnessing Dignity Amid Death in Guatemala&#8217;s Civil War</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">Robert Nickelsberg</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-11-29T09:00:14+00:00" itemprop="datePublished">Nov. 29, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Nov. 29, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/11/29/witnessing-dignity-amid-death-in-guatemalas-civil-war/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">The 1980s brought even more massacres and disappearances during Guatemala’s civil war. Robert Nickelsberg ventured to the highlands during that time to document the devastating effects of that violence on Mayan villages. </span><a href="https://lens.blogs.nytimes.com/2017/11/29/witnessing-dignity-amid-death-in-guatemalas-civil-war/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/11/29/witnessing-dignity-amid-death-in-guatemalas-civil-war/" data-title="Witnessing Dignity Amid Death in Guatemala&#8217;s Civil War" data-description="The 1980s brought even more massacres and disappearances during Guatemala’s civil war. Robert Nickelsberg ventured to the highlands during that time to document the devastating effects of that violence on Mayan villages. "></div></article>
+													<article class="entry hentry post-152110 post type-post status-publish category-uncategorized tag-area-planning-and-renewal tag-gentrification tag-los-angeles-calif tag-photography des-area-planning-and-renewal des-gentrification des-photography geo-los-angeles-calif news_keywords-gentrification news_keywords-photography" id="post-152110">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005572708" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/11/28/blogs/28-lens-hollywood-slide-7OOV/28-lens-hollywood-slide-7OOV-mediumThreeByTwo440.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/11/28/the-real-hollywood-without-the-glamour/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/11/28/blogs/28-lens-hollywood-slide-7OOV/28-lens-hollywood-slide-7OOV-mediumThreeByTwo440.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/11/28/blogs/28-lens-hollywood-slide-7OOV/28-lens-hollywood-slide-7OOV-mediumThreeByTwo440.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/11/28/blogs/the-real-hollywood-without-the-glamour.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">21<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">The Real Hollywood, Without the Glamour</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">The Real Hollywood, Without the Glamour</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Kwasi Boyd-Bouldin</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/11/28/blogs/28-lens-hollywood-slide-7OOV/28-lens-hollywood-slide-7OOV-mediumThreeByTwo440.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/11/28/the-real-hollywood-without-the-glamour/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to The Real Hollywood, Without the Glamour"><h3 itemprop="headline" class="story-heading entry-title"><span>The Real Hollywood, Without the Glamour</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">Evelyn Nieves</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-11-28T09:00:26+00:00" itemprop="datePublished">Nov. 28, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Nov. 28, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/11/28/the-real-hollywood-without-the-glamour/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">In “The Los Angeles Recordings,” Kwasi Boyd-Bouldin documents the streets of his adopted hometown, a cityscape vanishing amid gentrification.</span><a href="https://lens.blogs.nytimes.com/2017/11/28/the-real-hollywood-without-the-glamour/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/11/28/the-real-hollywood-without-the-glamour/" data-title="The Real Hollywood, Without the Glamour" data-description="In “The Los Angeles Recordings,” Kwasi Boyd-Bouldin documents the streets of his adopted hometown, a cityscape vanishing amid gentrification."></div></article>
+													<article class="entry hentry post-152070 post type-post status-publish category-uncategorized tag-africa tag-art tag-culture-arts tag-documentary-films-and-programs tag-lagosphoto-festival tag-photography des-art des-culture-arts des-documentary-films-and-programs des-photography geo-africa nyt_request_keyword-lagosphoto-festival news_keywords-africa news_keywords-art news_keywords-photography" id="post-152070">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005567527" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/11/27/blogs/27-lens-lagos-slide-DRNT/27-lens-lagos-slide-DRNT-mediumThreeByTwo440.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/11/27/telling-complex-truths-about-africa-at-lagosphoto-festival/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/11/27/blogs/27-lens-lagos-slide-DRNT/27-lens-lagos-slide-DRNT-mediumThreeByTwo440.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/11/27/blogs/27-lens-lagos-slide-DRNT/27-lens-lagos-slide-DRNT-mediumThreeByTwo440.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/11/27/blogs/telling-complex-truths-about-africa-at-lagosphoto-festival.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">13<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">Telling Complex Truths About Africa at LagosPhoto Festival</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">Telling Complex Truths About Africa at LagosPhoto Festival</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Alun Be</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/11/27/blogs/27-lens-lagos-slide-DRNT/27-lens-lagos-slide-DRNT-mediumThreeByTwo440.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/11/27/telling-complex-truths-about-africa-at-lagosphoto-festival/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to Telling Complex Truths About Africa at LagosPhoto Festival"><h3 itemprop="headline" class="story-heading entry-title"><span>Telling Complex Truths About Africa at LagosPhoto Festival</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">James Estrin</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-11-27T09:00:09+00:00" itemprop="datePublished">Nov. 27, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Nov. 27, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/11/27/telling-complex-truths-about-africa-at-lagosphoto-festival/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">This year&#8217;s LagosPhoto Festival looks for truth in photography to shape the way Africa&#8217;s stories are told.</span><a href="https://lens.blogs.nytimes.com/2017/11/27/telling-complex-truths-about-africa-at-lagosphoto-festival/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/11/27/telling-complex-truths-about-africa-at-lagosphoto-festival/" data-title="Telling Complex Truths About Africa at LagosPhoto Festival" data-description="This year&#039;s LagosPhoto Festival looks for truth in photography to shape the way Africa&#039;s stories are told."></div></article>
+													<article class="entry hentry post-152063 post type-post status-publish category-showcase category-uncategorized tag-area-planning-and-renewal tag-blesener-sarah tag-false-arrests-convictions-and-imprisonments tag-gentrification tag-mott-haven-bronx-ny tag-photography per-blesener-sarah des-area-planning-and-renewal des-false-arrests-convictions-and-imprisonments des-gentrification des-photography geo-mott-haven-bronx-ny news_keywords-gentrification news_keywords-photography" id="post-152063">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005566960" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/11/24/blogs/23-lens-mott-slide-K5CA/23-lens-mott-slide-K5CA-mediumThreeByTwo440.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/11/24/from-boys-to-men-in-the-south-bronx/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/11/24/blogs/23-lens-mott-slide-K5CA/23-lens-mott-slide-K5CA-mediumThreeByTwo440.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/11/24/blogs/23-lens-mott-slide-K5CA/23-lens-mott-slide-K5CA-mediumThreeByTwo440.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/11/24/blogs/from-boys-to-men-in-the-south-bronx.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">22<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">From Boys to Men in the South Bronx</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">From Boys to Men in the South Bronx</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Sarah Blesener/The Alexia Foundation</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/11/24/blogs/23-lens-mott-slide-K5CA/23-lens-mott-slide-K5CA-mediumThreeByTwo440.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/11/24/from-boys-to-men-in-the-south-bronx/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to From Boys to Men in the South Bronx"><h3 itemprop="headline" class="story-heading entry-title"><span>From Boys to Men in the South Bronx</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">Andrew Boryga</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-11-24T09:00:26+00:00" itemprop="datePublished">Nov. 24, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Nov. 24, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/11/24/from-boys-to-men-in-the-south-bronx/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">In “Haven,&#8221; Sarah Blesener looked beyond stereotypical portrayals of the South Bronx as she photographed a group of lifelong friends coming of age.</span><a href="https://lens.blogs.nytimes.com/2017/11/24/from-boys-to-men-in-the-south-bronx/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/11/24/from-boys-to-men-in-the-south-bronx/" data-title="From Boys to Men in the South Bronx" data-description="In “Haven,&quot; Sarah Blesener looked beyond stereotypical portrayals of the South Bronx as she photographed a group of lifelong friends coming of age."></div></article>
+													<article class="entry hentry post-152045 post type-post status-publish category-showcase category-uncategorized tag-books-and-literature tag-photography tag-traffic-accidents-and-safety tag-youth des-books-and-literature des-photography des-traffic-accidents-and-safety des-youth news_keywords-photography news_keywords-youth" id="post-152045">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005564550" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/11/22/blogs/22-lens-cig-slide-QA2V/22-lens-cig-slide-QA2V-mediumThreeByTwo440.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/11/22/fairytale-photos-of-everyday-life/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/11/22/blogs/22-lens-cig-slide-QA2V/22-lens-cig-slide-QA2V-mediumThreeByTwo440.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/11/22/blogs/22-lens-cig-slide-QA2V/22-lens-cig-slide-QA2V-mediumThreeByTwo440.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/11/22/blogs/fairytale-photos-of-everyday-life.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">20<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">Fairytale Photos of Everyday Life</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">Fairytale Photos of Everyday Life</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Cig Harvey</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/11/22/blogs/22-lens-cig-slide-QA2V/22-lens-cig-slide-QA2V-mediumThreeByTwo440.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/11/22/fairytale-photos-of-everyday-life/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to Fairytale Photos of Everyday Life"><h3 itemprop="headline" class="story-heading entry-title"><span>Fairytale Photos of Everyday Life</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">Jonathan Blaustein</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-11-22T09:00:49+00:00" itemprop="datePublished">Nov. 22, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Nov. 22, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/11/22/fairytale-photos-of-everyday-life/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">After surviving a car accident, Cig Harvey set out to photograph her relationship with life itself, drawing on her family, mystery and a sense of wonder.</span><a href="https://lens.blogs.nytimes.com/2017/11/22/fairytale-photos-of-everyday-life/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/11/22/fairytale-photos-of-everyday-life/" data-title="Fairytale Photos of Everyday Life" data-description="After surviving a car accident, Cig Harvey set out to photograph her relationship with life itself, drawing on her family, mystery and a sense of wonder."></div></article>
+													<article class="entry hentry post-152032 post type-post status-publish category-showcase category-uncategorized tag-careers-and-professions tag-congo-democratic-republic-of-congo-kinshasa tag-foreign-investments tag-photography tag-politics-and-government des-careers-and-professions des-foreign-investments des-photography des-politics-and-government geo-congo-democratic-republic-of-congo-kinshasa news_keywords-photography" id="post-152032">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005557481" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/11/21/blogs/21-lens-dewouters-slide-URYZ/21-lens-dewouters-slide-URYZ-mediumThreeByTwo440-v2.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/11/21/congos-youth-find-peace-in-a-violent-land/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/11/21/blogs/21-lens-dewouters-slide-URYZ/21-lens-dewouters-slide-URYZ-mediumThreeByTwo440-v2.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/11/21/blogs/21-lens-dewouters-slide-URYZ/21-lens-dewouters-slide-URYZ-mediumThreeByTwo440-v2.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/11/21/blogs/congos-youth-find-peace-in-a-violent-land.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">16<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">Congo’s Youth Find Peace in a Violent Land</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">Congo’s Youth Find Peace in a Violent Land</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Thomas de Wouters</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/11/21/blogs/21-lens-dewouters-slide-URYZ/21-lens-dewouters-slide-URYZ-mediumThreeByTwo440-v2.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/11/21/congos-youth-find-peace-in-a-violent-land/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to Congo&#8217;s Youth Find Peace in a Violent Land"><h3 itemprop="headline" class="story-heading entry-title"><span>Congo&#8217;s Youth Find Peace in a Violent Land</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">Finbarr O'Reilly</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-11-21T09:00:53+00:00" itemprop="datePublished">Nov. 21, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Nov. 21, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/11/21/congos-youth-find-peace-in-a-violent-land/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">In the Democratic Republic of Congo, Thomas de Wouters sought to document a growing youth movement devoted to nonviolence.</span><a href="https://lens.blogs.nytimes.com/2017/11/21/congos-youth-find-peace-in-a-violent-land/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/11/21/congos-youth-find-peace-in-a-violent-land/" data-title="Congo&#8217;s Youth Find Peace in a Violent Land" data-description="In the Democratic Republic of Congo, Thomas de Wouters sought to document a growing youth movement devoted to nonviolence."></div></article>
+													<article class="entry hentry post-152022 post type-post status-publish category-showcase category-uncategorized tag-families-and-family-life tag-goldin-nan tag-museum-of-fine-arts-boston tag-nixon-nicholas tag-photography tag-thanksgiving-day per-goldin-nan per-nixon-nicholas des-families-and-family-life des-photography des-thanksgiving-day org-museum-of-fine-arts-boston news_keywords-photography" id="post-152022">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005558968" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/11/20/blogs/20-lens-families-slide-HWTE/20-lens-families-slide-HWTE-mediumThreeByTwo440.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/11/20/in-search-of-the-american-family/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/11/20/blogs/20-lens-families-slide-HWTE/20-lens-families-slide-HWTE-mediumThreeByTwo440.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/11/20/blogs/20-lens-families-slide-HWTE/20-lens-families-slide-HWTE-mediumThreeByTwo440.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/11/20/blogs/in-search-of-the-american-family.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">14<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">In Search of the American Family</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">In Search of the American Family</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Julie Mack/Courtesy of Laurence Miller Gallery, New York/Museum of Fine Arts, Boston</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/11/20/blogs/20-lens-families-slide-HWTE/20-lens-families-slide-HWTE-mediumThreeByTwo440.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/11/20/in-search-of-the-american-family/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to In Search of the American Family"><h3 itemprop="headline" class="story-heading entry-title"><span>In Search of the American Family</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">Rena Silverman</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-11-20T09:00:06+00:00" itemprop="datePublished">Nov. 20, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Nov. 20, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/11/20/in-search-of-the-american-family/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">An upcoming show at the Museum of Fine Arts in Boston explores the idea of family: from the ones shown in portraits to the fleeting glimpses of the photographer whose own family is back home, waiting.</span><a href="https://lens.blogs.nytimes.com/2017/11/20/in-search-of-the-american-family/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/11/20/in-search-of-the-american-family/" data-title="In Search of the American Family" data-description="An upcoming show at the Museum of Fine Arts in Boston explores the idea of family: from the ones shown in portraits to the fleeting glimpses of the photographer whose own family is back home, waiting."></div></article>
+													<article class="entry hentry post-152017 post type-post status-publish category-showcase category-uncategorized tag-art tag-bars-and-nightclubs tag-broadway-manhattan-ny tag-museum-of-modern-art tag-photography tag-warhol-andy per-warhol-andy des-art des-bars-and-nightclubs des-photography org-museum-of-modern-art geo-broadway-manhattan-ny news_keywords-art news_keywords-photography" id="post-152017">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005552387" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/11/16/blogs/16-lens-ALBUM-slide-9KGL/16-lens-ALBUM-slide-9KGL-mediumThreeByTwo440-v2.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/11/16/in-the-1990s-new-yorks-nightlife-found-a-new-beat/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/11/16/blogs/16-lens-ALBUM-slide-9KGL/16-lens-ALBUM-slide-9KGL-mediumThreeByTwo440-v2.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/11/16/blogs/16-lens-ALBUM-slide-9KGL/16-lens-ALBUM-slide-9KGL-mediumThreeByTwo440-v2.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/11/16/blogs/in-the-1990s-new-yorks-nightlife-found-a-new-beat.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">18<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">In the 1990s, New York’s Nightlife Found a New Beat</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">In the 1990s, New York’s Nightlife Found a New Beat</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Catherine McGann</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/11/16/blogs/16-lens-ALBUM-slide-9KGL/16-lens-ALBUM-slide-9KGL-mediumThreeByTwo440-v2.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/11/16/in-the-1990s-new-yorks-nightlife-found-a-new-beat/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to In the 1990s, New York&#8217;s Nightlife Found a New Beat"><h3 itemprop="headline" class="story-heading entry-title"><span>In the 1990s, New York&#8217;s Nightlife Found a New Beat</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">John Leland</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-11-16T22:07:17+00:00" itemprop="datePublished">Nov. 16, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Nov. 16, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/11/16/in-the-1990s-new-yorks-nightlife-found-a-new-beat/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">Underground was out. Flash, velvet ropes and Gatsby-like decadence were in. Catherine McGann was there to photograph it.</span><a href="https://lens.blogs.nytimes.com/2017/11/16/in-the-1990s-new-yorks-nightlife-found-a-new-beat/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/11/16/in-the-1990s-new-yorks-nightlife-found-a-new-beat/" data-title="In the 1990s, New York&#8217;s Nightlife Found a New Beat" data-description="Underground was out. Flash, velvet ropes and Gatsby-like decadence were in. Catherine McGann was there to photograph it."></div></article>
+													<article class="entry hentry post-152001 post type-post status-publish category-showcase category-uncategorized tag-berman-nina-1960 tag-homeless-persons tag-london-england tag-new-york-city tag-photography tag-post-traumatic-stress-disorder tag-sexual-harassment tag-women-and-girls per-berman-nina-1960 des-homeless-persons des-photography des-post-traumatic-stress-disorder des-sexual-harassment des-women-and-girls geo-london-england geo-new-york-city news_keywords-photography" id="post-152001">
+		<div class="w380"><figure class="media slideshow promo  " id="slideshow-100000005552764" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/11/16/blogs/16-lens-nina-slide-G5YZ/16-lens-nina-slide-G5YZ-mediumThreeByTwo440.jpg"
+	itemtype="http://schema.org/ImageObject"
+	data-link-to="https://lens.blogs.nytimes.com/2017/11/16/a-photographer-and-her-subject-share-a-journey-over-the-decades/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body"	>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/11/16/blogs/16-lens-nina-slide-G5YZ/16-lens-nina-slide-G5YZ-mediumThreeByTwo440.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/11/16/blogs/16-lens-nina-slide-G5YZ/16-lens-nina-slide-G5YZ-mediumThreeByTwo440.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/11/16/blogs/a-photographer-and-her-subject-share-a-journey-over-the-decades.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">14<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">A Photographer and Her Subject Share a Journey Over the Decades</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">A Photographer and Her Subject Share a Journey Over the Decades</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Nina Berman</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/11/16/blogs/16-lens-nina-slide-G5YZ/16-lens-nina-slide-G5YZ-mediumThreeByTwo440.jpg" />
+	<meta itemprop="height" content="293" />
+	<meta itemprop="width" content="440" />
+	</figure>
+</div>		<header class="story-header">
+		<a href="https://lens.blogs.nytimes.com/2017/11/16/a-photographer-and-her-subject-share-a-journey-over-the-decades/?module=BlogPost-Title&version=Blog Main&contentCollection=Multimedia&action=Click&pgtype=Blogs&region=Body" rel="bookmark" class="entry-title-link " title="Permanent link to A Photographer and Her Subject Share a Journey Over the Decades"><h3 itemprop="headline" class="story-heading entry-title"><span>A Photographer and Her Subject Share a Journey Over the Decades</span></h3></a>		<div class="story-meta entry-meta">
+			<span class="author vcard byline-author"
+					itemscope=""
+					itemprop="author creator"
+					itemtype="http://schema.org/Person">
+					By <span class="fn" itemprop="name">Elizabeth Herman</span>
+				</span><!-- date published --><time class="dateline " datetime="2017-11-16T09:00:31+00:00" itemprop="datePublished">Nov. 16, 2017</time>
+			<!-- date updated --><span class="visually-hidden updated">Nov. 16, 2017</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly" href="https://lens.blogs.nytimes.com/2017/11/16/a-photographer-and-her-subject-share-a-journey-over-the-decades/"></a>
+				</span>		</div>
+	</header>
+	<p><span class="excerpt-inner">In “An Autobiography of Miss Wish,” Nina Berman tells the story of Kimberly Stevens, a survivor of sex trafficking and child pornography, whom Ms. Berman has known since meeting her in London 27 years ago.</span><a href="https://lens.blogs.nytimes.com/2017/11/16/a-photographer-and-her-subject-share-a-journey-over-the-decades/" class="more-link">Read&nbsp;more&nbsp;&raquo;</a></p>
+<div class="shareTools sharetools layout-horizontal" data-shares="email|Email,facebook|Share,twitter|Tweet" data-url="https://lens.blogs.nytimes.com/2017/11/16/a-photographer-and-her-subject-share-a-journey-over-the-decades/" data-title="A Photographer and Her Subject Share a Journey Over the Decades" data-description="In “An Autobiography of Miss Wish,” Nina Berman tells the story of Kimberly Stevens, a survivor of sex trafficking and child pornography, whom Ms. Berman has known since meeting her in London 27 years ago."></div></article>
+										</div>
+								<div id="show-more-container">
+					<button id="showMoreButton" class="button">View More Recent Posts</button>
+				</div>
+							</section>
+		</div><!-- close recent-posts -->
+			</div><!-- close a-column -->
+		<div class="c-column primary-sidebar widget-areanocontent robots-nocontent" role="complementary">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+	<script>
+		if ( window.innerWidth > 974 ) {
+			document.write( '<div class="ad sponsortile-ad hidden nocontent robots-nocontent"><div class="caption">Supported by</div><div id="sponsortile" class="ad sponsortile-ad-creative"></div></div>' );
+		}
+	</script>
+			<div class="pictures-of-the-week">
+	<h3 class="section-heading">Pictures of the Week</h3>
+		<ul>
+		<li class="pictures-of-the-week-item">
+<div class=""><figure class="media slideshow promo launch-media-viewer " id="slideshow-100000005181092" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/06/23/blogs/20170623-WIP-slide-FEF5/20170623-WIP-slide-FEF5-superJumbo.jpg"
+	itemtype="http://schema.org/ImageObject"
+		>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/06/23/blogs/20170623-WIP-slide-FEF5/20170623-WIP-slide-FEF5-superJumbo.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/06/23/blogs/20170623-WIP-slide-FEF5/20170623-WIP-slide-FEF5-superJumbo.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/06/23/blogs/the-week-in-pictures-june-23-2017.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">13<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">The Week in Pictures: June 23, 2017</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">The Week in Pictures: June 23, 2017</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Pablo Blazquez Dominguez/Getty Images</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/06/23/blogs/20170623-WIP-slide-FEF5/20170623-WIP-slide-FEF5-superJumbo.jpg" />
+	<meta itemprop="height" content="1342" />
+	<meta itemprop="width" content="2048" />
+	</figure>
 </div>
-</body>
+<h4 class="entry-title"><a>The Week in Pictures: June 23, 2017</a></h4>
+</li>
+<li class="pictures-of-the-week-item">
+<div class=""><figure class="media slideshow promo launch-media-viewer " id="slideshow-100000005166853" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/06/16/blogs/20170616-WIP-slide-GG77/20170616-WIP-slide-GG77-superJumbo.jpg"
+	itemtype="http://schema.org/ImageObject"
+		>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/06/16/blogs/20170616-WIP-slide-GG77/20170616-WIP-slide-GG77-superJumbo.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/06/16/blogs/20170616-WIP-slide-GG77/20170616-WIP-slide-GG77-superJumbo.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/06/16/blogs/the-week-in-pictures-june-16-2017.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">15<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">The Week in Pictures: June 16, 2017</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">The Week in Pictures: June 16, 2017</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Adam Dean for The New York Times</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/06/16/blogs/20170616-WIP-slide-GG77/20170616-WIP-slide-GG77-superJumbo.jpg" />
+	<meta itemprop="height" content="1366" />
+	<meta itemprop="width" content="2048" />
+	</figure>
+</div>
+<h4 class="entry-title"><a>The Week in Pictures: June 16, 2017</a></h4>
+</li>
+<li class="pictures-of-the-week-item">
+<div class=""><figure class="media slideshow promo launch-media-viewer " id="slideshow-100000005152781" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/06/09/blogs/20170609-WIP-slide-0PYS/20170609-WIP-slide-0PYS-superJumbo.jpg"
+	itemtype="http://schema.org/ImageObject"
+		>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/06/09/blogs/20170609-WIP-slide-0PYS/20170609-WIP-slide-0PYS-superJumbo.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/06/09/blogs/20170609-WIP-slide-0PYS/20170609-WIP-slide-0PYS-superJumbo.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/06/09/blogs/the-week-in-pictures-june-9-2017.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">15<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">The Week in Pictures: June 9, 2017</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">The Week in Pictures: June 9, 2017</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Ivor Prickett for The New York Times</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/06/09/blogs/20170609-WIP-slide-0PYS/20170609-WIP-slide-0PYS-superJumbo.jpg" />
+	<meta itemprop="height" content="1365" />
+	<meta itemprop="width" content="2048" />
+	</figure>
+</div>
+<h4 class="entry-title"><a>The Week in Pictures: June 9, 2017</a></h4>
+</li>
+<li class="pictures-of-the-week-item">
+<div class=""><figure class="media slideshow promo launch-media-viewer " id="slideshow-100000005140053" data-media-action="link-to" aria-label="media" role="group"
+		itemprop="associatedMedia" itemscope
+	itemid="https://static01.nyt.com/images/2017/06/02/blogs/20170601-WIP-slide-S39T/20170601-WIP-slide-S39T-superJumbo.jpg"
+	itemtype="http://schema.org/ImageObject"
+		>
+		
+		<span class="visually-hidden">Slide Show</span>
+		<div class="image">
+		<img src="https://static01.nyt.com/images/2017/06/02/blogs/20170601-WIP-slide-S39T/20170601-WIP-slide-S39T-superJumbo.jpg" itemprop="url" itemid="https://static01.nyt.com/images/2017/06/02/blogs/20170601-WIP-slide-S39T/20170601-WIP-slide-S39T-superJumbo.jpg"/>
+		<div class="media-action-overlay-wrap">
+                        <a href="https://www.nytimes.com/slideshow/2017/06/02/blogs/the-week-in-pictures-june-2-2017.html">
+            			<div class="media-action-overlay">
+				<i class="icon sprite-icon"></i>
+				<div class="media-meta">
+					<h5 class="kicker"><span class="call-to-action">View Slide Show</span><span class="counter">11<span class="item-name"> Photographs</span></span></h5>
+					<h4 class="headline">The Week in Pictures: June 2, 2017</h4>
+				</div>
+			</div>
+                        </a>
+            		</div>
+
+	</div>
+
+	<figcaption class="caption" itemprop="description">
+		<div class="caption-inner">
+			<h4 class="headline">The Week in Pictures: June 2, 2017</h4>
+			<p class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> European Pressphoto Agency</p>
+		</div>
+	</figcaption>
+
+	<meta itemprop="identifier" content="https://static01.nyt.com/images/2017/06/02/blogs/20170601-WIP-slide-S39T/20170601-WIP-slide-S39T-superJumbo.jpg" />
+	<meta itemprop="height" content="1371" />
+	<meta itemprop="width" content="2048" />
+	</figure>
+</div>
+<h4 class="entry-title"><a>The Week in Pictures: June 2, 2017</a></h4>
+</li>
+	</ul>
+	<h3 class="view-all-pictures-of-the-week">
+		<a href="https://lens.blogs.nytimes.com/category/pictures-of-the-week/ ">
+			View all Pictures of the Week
+		</a>
+	</h3>
+	</div>
+        <div id="about_lens_widget-2" class="module nocontent widget_about_lens_widget">        <div class="about-lens-widget">
+        <h4 class="moduleHeader">About Lens</h4><p>Lens is the photojournalism blog of The New York Times, presenting the finest and most interesting visual and multimedia reporting -- photographs, videos and slide shows. A showcase for Times photographers, it also seeks to highlight the best work of other newspapers, magazines and news and picture agencies; in print, in books, in galleries, in museums and on the Web. And it will draw on The Times's own pictorial archive, numbering in the millions of images and going back to the early 20th century. E-mail us tips, story suggestions and ideas to lens@nytimes.com.</p>
+        <div class="social-links">
+            <h4>Follow Lens:</h4>
+            <ul class="menu">
+                <li class="facebook"><a href="https://facebook.com/nytimesphoto"><i class="icon"></i><span>Facebook</span></a></li>
+                <li class="twitter"><a href="https://twitter.com/nytimesphoto"><i class="icon"></i><span>Twitter</span></a></li>
+                <li class="rss"><a href="https://lens.blogs.nytimes.com/feed/"><i class="icon"></i><span>RSS</span></a></li>
+            </ul>
+        </div>
+        </div><!-- end about-lens-widget -->
+        </div>	</div><!-- .c-column -->
+</div><!-- close after-masthead-and-lede -->
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-89',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="http://schema.org/Organization"
+						itemid="http://www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="http://www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="http://nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="http://spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+
+
+         
+
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script>
+		require(['foundation/main'], function () {
+			require( ['blogs/instances/lens'] );
+		});
+	</script>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164156","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":968,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
